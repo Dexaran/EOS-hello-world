@@ -79,3 +79,30 @@ In my example this command is:
 The result is shown at the image below:
 
 ![OUT3](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT3.png)
+
+`contract.wasm` and `contract.abi` files must appear in contract folder next to the contrac.cpp source.
+
+Now open the `contract.abi` file and check whether it is valid. ABI must be similar to [this](https://github.com/Dexaran/EOS-hello-world/blob/master/contract/contract.abi). If your ABI file is empty or action definitions are empty - reinstall the EOSIO and EOSIO CDT software and make sure that you are using the actual versions. EOSIO 1.3x and 1.4x ABI generators are not compatible with the current EOSIO version.
+
+#### 5. Deploying the contract
+
+At this step you can download [this contract](https://github.com/Dexaran/EOS-hello-world/tree/master/contract) to deploy it.
+
+Navigate to the contract folder where the `contract.abi` and `contract.wasm` files are located. It is important that the folder name is similar to `.abi` and `.wasm` file names.
+
+Run:
+
+`cleos -u <api_endpoint> set contract <account_name> <path_to_contract>` to deploy the contract.
+
+- `<api_endpoint>` is the address of API node that you ask to execute your transaction. You can find a list of API endpoints here: https://www.eosdocs.io/resources/apiendpoints/
+
+- `<account_name>` is the name of your account entry in `cleos` 
+
+- `<path_to_contract` is a path to the folder where `contract.wasm` and `contract.abi` files are located.
+
+In my example the command looks like this:
+
+`cleos -u https://api.eosdetroit.io:443 set contract dexaraniiznx '/home/dex/Desktop/contract'`
+
+
+![OUT4](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT4.png)
