@@ -133,7 +133,7 @@ In my example:
 `cleos -u https://api.eosdetroit.io:443 push action dexaraniiznx hi ["dexaran"] -p dexaraniiznx@active`
 
 
-![OUT6](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT5.png)
+![OUT6](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT6.png)
 
 
 As you can see at the image above, the contract has responded `#  dexaraniiznx <= dexaraniiznx::hi             {"user":"dexaran"}` 
