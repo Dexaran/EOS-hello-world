@@ -106,3 +106,10 @@ In my example the command looks like this:
 
 
 ![OUT4](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT4.png)
+
+Now check your account transactions at block explorer (I'm using EosFlare: https://eosflare.io/search/dexaraniiznx).
+
+The history of transactions must contain your contract deployment transactions now.
+
+
+![OUT5](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT5.png)
