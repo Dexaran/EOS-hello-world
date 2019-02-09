@@ -24,9 +24,13 @@ Output of the command is shown at the screenshot below. Save the "password strin
 
 ![OUT1](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT1.png)
 
-Run `cleos wallet unlock -n <account_name>`
+Run:
 
-Then run `cleos wallet import -n <account_name> --private-key <private_key>` to import your private key.
+`cleos wallet unlock -n <account_name>`
+
+Then run:
+
+`cleos wallet import -n <account_name> --private-key <private_key>` to import your private key.
 
 ![OUT2](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT2.png)
 
@@ -61,3 +65,17 @@ EOSIO_DISPATCH( hello, (hi))
 In terminal navigate to the folder where the `contract.cpp` file is located.
 
 `cd <path_to_your_folder>/contract`
+
+#### 4. Compiling the contract
+
+Run:
+
+`eosio-cpp -o <contract_name>.wasm <contract_name>.cpp --abigen` where `<contract_name>` is the name of your contract which is similar to the name of the folder where the contract is located.
+
+In my example this command is:
+
+`eosio-cpp -o contract.wasm contract.cpp --abigen`
+
+The result is shown at the image below:
+
+![OUT3](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT3.png)
