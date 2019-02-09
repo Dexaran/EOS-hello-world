@@ -29,3 +29,5 @@ Run `cleos wallet unlock -n <account_name>`
 Then run `cleos wallet import -n <account_name> --private-key <private_key>` to import your private key.
 
 ![OUT2](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT2.png)
+
+Now you have a ready-to-go account entry in `cleos`.
