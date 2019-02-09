@@ -19,3 +19,5 @@ My command looks like this:
 `cleos wallet create -n dexaraniiznx --to-console`
 
 Output of the command is shown at the screenshot below. Save the "password string" for your account becasue you need it to unlock the wallet ("PW5KhdWan1ySa5nAAefHSadmeNuhBHXh1WV6HzGknTQiyeCPR9wf9" in my example).
+
+![OUT1](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT1.png)
