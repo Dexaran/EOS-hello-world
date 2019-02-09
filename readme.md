@@ -57,3 +57,7 @@ class [[eosio::contract("contract")]] hello : public contract {
 
 EOSIO_DISPATCH( hello, (hi))
 ```
+
+In terminal navigate to the folder where the `contract.cpp` file is located.
+
+`cd <path_to_your_folder>/contract`
