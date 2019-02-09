@@ -31,3 +31,29 @@ Then run `cleos wallet import -n <account_name> --private-key <private_key>` to 
 ![OUT2](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT2.png)
 
 Now you have a ready-to-go account entry in `cleos`.
+
+#### 3. Create the smart-contract in proper folder
+
+IMPORTANT: You must name contracts, folders and accounts according to [EOS naming conventions](https://developers.eos.io/eosio-cpp/v1.3.2/docs/naming-conventions). It is very important to keep folder/file/classe names exactly as written in this example, otherwise compilation may fail.
+
+Create `contract` folder. Then create `contract.cpp` file inside the `contract` folder. It is important that this folder and file have the same name.
+
+Write the following code in the `contract.cpp` file:
+```cpp
+#include <eosiolib/eosio.hpp>
+#include <eosiolib/print.hpp>
+
+using namespace eosio;
+
+class [[eosio::contract("contract")]] hello : public contract {
+  public:
+      using contract::contract;
+
+      [[eosio::action]]
+      void hi( name user ) {
+         print( "Hello, ", user);
+      }
+};
+
+EOSIO_DISPATCH( hello, (hi))
+```
