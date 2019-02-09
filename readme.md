@@ -113,3 +113,33 @@ The history of transactions must contain your contract deployment transactions n
 
 
 ![OUT5](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT5.png)
+
+Congratulations, your account is now a contract! (At least my account definitely is)
+
+#### 6. Invoking your contract
+
+Run:
+
+`cleos -u <api_endpoint> push action <account_name> <action> <action_data> -p <account_name>@<privilege>`
+
+- `<action>` is the name of a method that we are going to invoke in the executable contract
+
+- `<action_data` is our input
+
+- `<privilege>` is the level of privileges of your account (@active or @owner)
+
+In my example:
+
+`cleos -u https://api.eosdetroit.io:443 push action dexaraniiznx hi ["dexaran"] -p dexaraniiznx@active`
+
+
+![OUT6](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT5.png)
+
+
+As you can see at the image above, the contract has responded `#  dexaraniiznx <= dexaraniiznx::hi             {"user":"dexaran"}` 
+
+Now you can verify the results of contract invocation at block explorer.
+
+
+![OUT7](https://github.com/Dexaran/EOS-hello-world/blob/master/images/OUT7.png)
+
