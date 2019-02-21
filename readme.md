@@ -1,6 +1,6 @@
 # Hello World contract for EOS 1.6x
 
-Currently [Hello World](https://developers.eos.io/eosio-home/v2.3.0/docs/your-first-contract) turorial is outdated and if you will compile the code then it will not work on EOS mainnet.
+Currently [Hello World turorial](https://developers.eos.io/eosio-home/v2.3.0/docs/your-first-contract) is outdated and if you will compile the code then it will not work on EOS mainnet.
 
 Here is my tutorial for compiling and deploying "Hello World" contract on EOS mainnet (actual for EOS 1.6x and eos cdt 1.5x / Ubuntu 18.04). 
 
