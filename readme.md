@@ -1,4 +1,4 @@
-# Hello World contract for EOS 1.6x
+# Hello World contract for EOS 1.6x (OUTDATED)
 
 Currently [Hello World turorial](https://developers.eos.io/eosio-home/v2.3.0/docs/your-first-contract) is outdated and if you will compile the code then it will not work on EOS mainnet.
 
